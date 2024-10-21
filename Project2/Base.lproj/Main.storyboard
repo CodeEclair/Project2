@@ -16,33 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ9-IR-azV">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ9-IR-azV">
                                 <rect key="frame" x="84.666666666666657" y="100" width="199.99999999999997" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XZ9-IR-azV" secondAttribute="height" multiplier="2:1" id="QOo-s6-bLd"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                <buttonConfiguration key="configuration" style="plain" image="us" imagePadding="0.0">
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLH-b8-k75"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klX-BR-xAD">
+                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klX-BR-xAD">
                                 <rect key="frame" x="84.666666666666657" y="244" width="199.99999999999997" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="klX-BR-xAD" secondAttribute="height" multiplier="2:1" id="Tkt-O3-KJY"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                <buttonConfiguration key="configuration" style="plain" image="us" imagePadding="0.0">
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iC-p3-PDA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="150" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-BI-2bW">
+                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" verticalHuggingPriority="150" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-BI-2bW">
                                 <rect key="frame" x="84.666666666666657" y="388" width="199.99999999999997" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MZt-BI-2bW" secondAttribute="height" multiplier="2:1" id="0vX-Wj-AwG"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                <buttonConfiguration key="configuration" style="plain" image="us" imagePadding="0.0">
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -54,7 +63,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MZt-BI-2bW" firstAttribute="centerX" secondItem="klX-BR-xAD" secondAttribute="centerX" id="1oI-nx-5u3"/>
+                            <constraint firstItem="MZt-BI-2bW" firstAttribute="height" secondItem="klX-BR-xAD" secondAttribute="height" id="3xk-Bt-VOH"/>
                             <constraint firstItem="XZ9-IR-azV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BN7-ZR-cUR"/>
+                            <constraint firstItem="klX-BR-xAD" firstAttribute="height" secondItem="XZ9-IR-azV" secondAttribute="height" id="EnN-LY-BCV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MZt-BI-2bW" secondAttribute="bottom" constant="20" id="LH5-QR-Chj"/>
                             <constraint firstItem="klX-BR-xAD" firstAttribute="top" secondItem="XZ9-IR-azV" secondAttribute="bottom" constant="30" id="MOH-oV-Xyn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="XZ9-IR-azV" secondAttribute="top" constant="3" id="Nfg-M1-izB"/>
                             <constraint firstItem="MZt-BI-2bW" firstAttribute="top" secondItem="klX-BR-xAD" secondAttribute="bottom" constant="30" id="kOL-zs-F4B"/>
